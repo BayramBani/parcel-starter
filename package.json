@@ -1,0 +1,25 @@
+{
+  "name": "parcel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "clean": "cleandir dist && cleandir dev",
+    "start": "parcel serve --port 9000 -d dev src/index.html",
+    "watch": "parcel watch -o bundle src/index.js",
+    "build": "parcel build -o bundle src/index.js",
+    "prod": "parcel build src/index.html"
+  },
+  "dependencies": {
+    "assets": "^3.0.1",
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10"
+  }
+}
